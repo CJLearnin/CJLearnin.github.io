@@ -283,12 +283,12 @@
         { name: 'Zimbabwe', code: 'ZW' }
       ];
       console.log('List of countries in the world', countries);
-      var count = 0;
+
       function myFunction() {
         const keys = Object.keys(countries);
         const randomIndex = keys[Math.floor(Math.random() * keys.length)];
         const item = countries[randomIndex];
-        console.log(item);
+        console.log(item.name);
       }
 
       sessionStorage.setItem('json_item', JSON.stringify(obj));
