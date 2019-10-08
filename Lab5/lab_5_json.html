@@ -25,7 +25,9 @@
               <ol>
                 <li>At the click of the button above</li>
                 <li>Loop through the 'countries' variable</li>
-                <li>Replace this list's entries with country names</li>
+                <li id="replace">
+                  Replace this list's entries with country names
+                </li>
                 <li>Now, limit the number of countries listed to fifty</li>
                 <li>Randomize which fifty countries are displayed on load</li>
               </ol>
@@ -288,6 +290,7 @@
         const keys = Object.keys(countries);
         const randomIndex = keys[Math.floor(Math.random() * keys.length)];
         const item = countries[randomIndex];
+        document.getElementById('replace').innerHTML('item.name');
         console.log(item.name);
       }
 
