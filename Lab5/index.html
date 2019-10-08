@@ -14,6 +14,7 @@
           Click me to replace list entries
         </button>
         <div class="content">
+          <p id="replace"></p>
           <ul class="instructions">
             <li>Delete and re-clone the class repository</li>
             <li>
@@ -25,7 +26,7 @@
               <ol>
                 <li>At the click of the button above</li>
                 <li>Loop through the 'countries' variable</li>
-                <li id="replace">
+                <li>
                   Replace this list's entries with country names
                 </li>
                 <li>Now, limit the number of countries listed to fifty</li>
@@ -290,7 +291,7 @@
         const keys = Object.keys(countries);
         const randomIndex = keys[Math.floor(Math.random() * keys.length)];
         const item = countries[randomIndex];
-        document.getElementById('replace').innerHTML('item.name');
+        document.getElementById('replace').innerHTML = item.name;
         console.log(item.name);
       }
 
