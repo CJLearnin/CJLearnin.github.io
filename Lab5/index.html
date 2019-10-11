@@ -10,12 +10,12 @@
       <div class="wrapper">
         <div class="header">Test JSON page</div>
         <!-- <button class="button" onclick="loadData()">Load Some JSON</button> -->
-        <button class="button" onclick="myFunction();">
+        <button class="button" onclick="myFunction()">
           Click me to replace list entries
         </button>
         <div class="content">
-          <p id="replace"></p>
-          <ul class="instructions">
+          <p></p>
+          <ol class="instructions">
             <li>Delete and re-clone the class repository</li>
             <li>
               Open <span class="code">lab_5_json.html</span> in your browser
@@ -33,7 +33,7 @@
                 <li>Randomize which fifty countries are displayed on load</li>
               </ol>
             </li>
-          </ul>
+          </ol>
         </div>
         <div class="footer"></div>
       </div>
@@ -287,15 +287,41 @@
       ];
       console.log('List of countries in the world', countries);
 
-      function myFunction() {
-        const keys = Object.keys(countries);
-        const randomIndex = keys[Math.floor(Math.random() * keys.length)];
-        const item = countries[randomIndex];
-        document.getElementById('replace').innerHTML = item.name;
-        console.log(item.name);
-      }
+      // sole.log('list of countries in the world', countries);
 
-      sessionStorage.setItem('json_item', JSON.stringify(obj));
+      sessionStorage.setItem('coun_arr', JSON.stringify(countries));
+
+      // How she is going to do it.
+
+      function getRandomintInclusive(min, max) {
+        min = Math.ceil(min);
+        max = Math.floor(max);
+        return Math.floor(Math.random() * (max - min + 1)) + min;
+      };
+      function myFunction() {
+        // const randomIndex = keys[Math.floor(Math.random() * keys.length)];
+        const json = sessionStorage.getItem('coun_arr');
+        const list = JSON.parse(json);
+
+        // const item = countries[randomIndex];
+        const nameArray = list.map((i) => i.name);
+//          console.log(nameArray)
+
+        const inst = document.querySelector('.instructions');
+        inst.innerHTML = '';
+
+        for (let i = 0; i < 50; i++) {
+          const selectNumber = getRandomintInclusive(0, 242);
+          let el = document.createElement('li');
+
+          el.innerText = nameArray[selectNumber];
+          inst.appendChild(el);
+        };
+        // document.querySelector('.instructions').innerHTML = item.name;
+        // console.log(item.name);
+      };
+
+//  
     </script>
   </body>
 </html>
