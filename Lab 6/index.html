@@ -26,6 +26,7 @@
         fetch('ajax_sample.json')
           .then(res => res.json())
           .then(res => res.map(c => c.name))
+
           // .then(codes => document.querySelector(".content").innerText = codes);
           .then(codes => {
             const a = codes.map(item => {
