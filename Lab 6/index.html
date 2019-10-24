@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Test AJAX page</title>
+    <link rel="stylesheet" type="text/css" href="./lab_styles.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="wrapper">
+        <div class="header">Test AJAX page</div>
+        <button class="button" onclick="loadData()">Load Some JSON</button>
+        <div class="content"></div>
+        <div class="footer"></div>
+      </div>
+    </div>
+    <script>
+      function getRandomintInclusive(min, max) {
+        min = Math.ceil(min);
+        max = Math.floor(max);
+        return Math.floor(Math.random() * (max - min + 1)) + min;
+      }
+      function loadData() {
+        const list_fill = document.querySelector('.content');
+        list_fill.innerHTML = '';
+        fetch('ajax_sample.json')
+          .then(res => res.json())
+          .then(res => res.map(c => c.name))
+          // .then(codes => document.querySelector(".content").innerText = codes);
+          .then(codes => {
+            const a = codes.map(item => {
+              console.log('im a demo', item);
+              return item;
+            });
+            console.log('the returned values of a ', a);
+            for (let i = 0; i < 50; i++) {
+              const selectNumber = getRandomintInclusive(0, 242);
+              let el = document.createElement('li');
+              el.innerText = a[selectNumber];
+              list_fill.appendChild(el);
+
+              // document.querySelector('.content').innerText = codes;
+            }
+
+            return codes;
+          });
+      }
+    </script>
+  </body>
+</html>
