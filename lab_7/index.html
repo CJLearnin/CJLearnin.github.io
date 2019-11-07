@@ -25,6 +25,8 @@
         fetch('https://api.umd.io/v0/bus/routes')
           .then(res => res.json())
           .then(res => {
+            console.log(res);
+
             const found = res.find(function(element) {
               return element.route_id == '109';
             });
