@@ -98,35 +98,48 @@
     <!-- Jumbotron -->
 
     <div class="container">
-      <table class="table table-hover table-dark">
-        <thead>
-          <tr>
-            <th scope="col">#</th>
-            <th scope="col">First</th>
-            <th scope="col">Last</th>
-            <th scope="col">Handle</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
-          </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>@fat</td>
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td colspan="2">Larry the Bird</td>
-            <td>@twitter</td>
-          </tr>
-        </tbody>
+      <table class="table table-hover table-dark" style="width:60%">
+          <thead>
+              <tr>
+                  <th scope="col">Name</th>
+                  <th scope="col">Website</th>
+              </tr>
+            </thead>
+            <tbody class = 'temp'>
+            </tbody>
       </table>
     </div>
+    <div id="googleMap"></div>
+    <script>
+        fetch('https://data.princegeorgescountymd.gov/resource/sphi-rwax.json')
+        .then(res => res.json())
+        .then(res => res.map(c => c.market_name + " " + c.website))
+        .then(data => {
+          const a = data.map((item) => {
+            return item;
+          })
+          console.log(a);
+          var final_text = "";
+          for (var i = 0; i < data.length; i++) {
+            var split_array = a[i].split("http://"); 
+            final_text += "<tr><td>" + split_array[0] + "</td><td>" + split_array[1] + "</td></tr>";
+          }
+          const element = document.querySelector('.temp');
+          element.innerHTML = final_text;
+          return data;
+          })
+        .then(data => console.log(data))
+
+        function myMap() {
+          var mapProp= {
+            center:new google.maps.LatLng(51.508742,-0.120850),
+            zoom:5,
+          };
+          var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+        } 
+            
+  </script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDdwUlo6R40RYkSfMqjDxKojsiY9yNSurI&callback=myMap"></script>
+
   </body>
 </html>
