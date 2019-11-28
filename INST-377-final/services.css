@@ -31,9 +31,10 @@ table, th, td {
   text-align: center;
 }
 
-#googleMap{
-  width:100%;
-  height:600px;
+.gmap_canvas{
+  background:none;
+  height:800px;
+  width:800px;
 }
 
 .container{
