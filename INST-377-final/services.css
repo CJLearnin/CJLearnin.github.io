@@ -32,12 +32,13 @@ table, th, td {
 }
 
 .gmap_canvas{
+  display: flex;
   background:none;
-  height:800px;
-  width:800px;
+  
 }
 
 .container{
-  display: inline-block;
+  display: inline-flex;
+ 
 }
 
