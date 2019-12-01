@@ -5,32 +5,37 @@ body {
   width: 100%;
   height: 100%;
   font-family: Poppins !important;
-  text-shadow: #343a40 2px 2px;
-
 }
 
 body {
-  background-image: url('https://images.pexels.com/photos/696205/pexels-photo-696205.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+  background-image: url('https://images.unsplash.com/photo-1567306295427-94503f8300d7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1452&q=80');
   background-size: cover;
-  
-  
 }
 
-.navbar{
-  background-color: black;
+.navbar {
   font-weight: bolder;
 }
-.navbar-brand{
+.navbar-brand {
   font-size: 48x;
-  color:white;
-
 }
-.nav-link{
+.nav-link {
   font-size: 48x;
-  color:white;
-
+  color: white;
+}
+/* a {
+  color: #000000;
 }
 
+a:hover,
+a:focus,
+a:active,
+a.active {
+  color: #17d0d5;
+} */
+.btn {
+  color: black;
+  font-weight: bolder;
+}
 .social-media {
   position: absolute;
   top: 50%;
@@ -43,23 +48,28 @@ body {
   padding-top: 20px;
 }
 
-
+.fa-facebook:hover {
+  color: rgb(17, 115, 235);
+}
+.fa-instagram:hover {
+  color: rgb(205, 90, 191);
+}
+.fa-twitter:hover {
+  color: rgb(17, 115, 235);
+}
 
 .header {
   position: absolute;
   top: 38%;
   left: 46%;
   transform: translate(-50%, -50%);
- 
+  text-shadow: #343a40 2px 2px;
 }
 
 .header h1 {
   color: #fff;
-  
 
-  
   font-weight: bolder;
-  
 }
 
 .header p {
@@ -77,31 +87,6 @@ body {
   letter-spacing: 4px;
   font-weight: 600;
   font-size: 12px;
-}
-
-.bottom-bar {
-  color: #fff;
-  position: absolute;
-  bottom: 0px;
-  left: 0;
-  right: 0;
-}
-
-.row {
-  padding: 2.6em 2.6em 2em 2.6em;
-  background: rgb(31, 31, 31);
-  border-top-left-radius: 12px;
-  border-top-right-radius: 12px;
-}
-
-.bottom-bar h6 {
-  font-weight: bolder;
-  text-transform: uppercase;
-}
-
-.bottom-bar p {
-  font-size: 14px;
-  font-weight: lighter;
 }
 
 .overlay {
@@ -123,26 +108,11 @@ body {
   letter-spacing: 12px;
 }
 
-#contact {
-  /* background: url(images/unsplash02.jpg); */
-  background-size: cover;
-
-  padding: 40px;
-  color: #fff;
-  border-top: #ff0b0b 70px soild;
-  border-bottom: #333 7px soild;
-}
-footer {
-  padding: 40px;
-}
-
-
 /** Width between 1200x to 0
  *  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  */
 
- @media (min-width: 1200px) {
-
+@media (min-width: 1200px) {
 }
 
 /** Width between 992px to 1199px
@@ -150,7 +120,6 @@ footer {
  */
 
 @media (min-width: 992px) and (max-width: 1199px) {
-  
 }
 
 /** Width between 768px to 991px
@@ -178,8 +147,4 @@ footer {
     padding-top: 10px;
     padding-bottom: 10px;
   }
-  /* .responsive {
-    float: right;
-    padding-top: 15px;
-    display: block;
-  } */
+}
