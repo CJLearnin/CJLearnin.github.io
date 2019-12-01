@@ -23,13 +23,13 @@
     <!-- jquery -->
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 
-    <title>Document</title>
+    <title>Prince Georges Farmers Markets</title>
   </head>
   <body>
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg fixed-top">
       <div class="container">
-        <a class="navbar-brand" href="#">HB WEINDIS</a>
+        <a class="navbar-brand" href="#">Prince Georges Farmers Markets</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -53,7 +53,7 @@
               <a class="nav-link" href="about.html">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="services.html">Services</a>
+              <a class="nav-link" href="services.html">View Map</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="help.html">Help</a>
@@ -69,29 +69,12 @@
         <div class="intro py-5">
           <!-- Content -->
           <h1 class="h1 orange-text">
-            Farmers Market App
+            Find the best market
           </h1>
           <h3 class="card-title h3 my-4 py-2">
-            We help you find Farmers Markets around Hyattsville.
+            Click on different pins to find out more about the location.
           </h3>
-          <p class="mb-4 pb-2 px-md-5 mx-md-5">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur
-            obcaecati vero aliquid libero doloribus ad, unde tempora maiores,
-            ullam, modi qui quidem minima debitis perferendis vitae cumque et
-            quo impedit. Lorem ipsum dolor sit amet, consectetur adipisicing
-            elit. Pariatur obcaecati vero aliquid libero doloribus ad, unde
-            tempora maiores, ullam, modi qui quidem minima debitis perferendis
-            vitae cumque et quo impedit. Lorem ipsum dolor sit amet, consectetur
-            adipisicing elit. Pariatur obcaecati vero aliquid libero doloribus
-            ad, unde tempora maiores, ullam, modi qui quidem minima debitis
-            perferendis vitae cumque et quo impedit. Lorem ipsum dolor sit amet,
-            consectetur adipisicing elit. Pariatur obcaecati vero aliquid libero
-            doloribus ad, unde tempora maiores, ullam, modi qui quidem minima
-            debitis perferendis vitae cumque et quo impedit. Lorem ipsum dolor
-            sit amet, consectetur adipisicing elit. Pariatur obcaecati vero
-            aliquid libero doloribus ad, unde tempora maiores, ullam, modi qui
-            quidem minima debitis perferendis vitae cumque et quo impedit.
-          </p>
+          
         </div>
       </div>
     </div>
@@ -108,12 +91,17 @@
             <tbody class = 'temp'>
             </tbody>
       </table>
+    
+    <div class="gmap_canvas">
+        <iframe width="800" height="1700" id="gmap_canvas" src="https://www.google.com/maps/d/u/0/embed?mid=1ztngLn5ZqP24hZH5Uy9pPo3YSxVXK6vq" 
+        frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
     </div>
-    <div id="googleMap"></div>
+    </div>
+
     <script>
         fetch('https://data.princegeorgescountymd.gov/resource/sphi-rwax.json')
         .then(res => res.json())
-        .then(res => res.map(c => c.market_name + " " + c.website))
+        .then(res => res.map(c => c.market_name + "split" + c.website))
         .then(data => {
           const a = data.map((item) => {
             return item;
@@ -121,7 +109,10 @@
           console.log(a);
           var final_text = "";
           for (var i = 0; i < data.length; i++) {
-            var split_array = a[i].split("http://"); 
+            var split_array = a[i].split("split");
+            if(split_array[1] == ("undefined")){
+              split_array[1] = "Not Avaliable";
+            } 
             final_text += "<tr><td>" + split_array[0] + "</td><td>" + split_array[1] + "</td></tr>";
           }
           const element = document.querySelector('.temp');
@@ -129,16 +120,8 @@
           return data;
           })
         .then(data => console.log(data))
-
-        function myMap() {
-          var mapProp= {
-            center:new google.maps.LatLng(51.508742,-0.120850),
-            zoom:5,
-          };
-          var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
-        } 
+ 
             
   </script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDdwUlo6R40RYkSfMqjDxKojsiY9yNSurI&callback=myMap"></script>
   </body>
 </html>
