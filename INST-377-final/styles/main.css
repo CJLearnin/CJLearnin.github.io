@@ -22,7 +22,7 @@ body {
   font-size: 48x;
   color: white;
 }
-/* a {
+a {
   color: #000000;
 }
 
@@ -31,7 +31,7 @@ a:focus,
 a:active,
 a.active {
   color: #17d0d5;
-} */
+}
 .btn {
   color: black;
   font-weight: bolder;
