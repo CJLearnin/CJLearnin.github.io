@@ -32,7 +32,9 @@ body {
   font-size: 48x;
   color: white;
 }
-
+table {
+  width: 30%;
+}
 table,
 th,
 td {
@@ -42,10 +44,7 @@ td {
 }
 
 .gmap_canvas {
-  display: flex;
-  background: none;
-}
+  overflow: hidden;
 
-.container {
-  display: inline-flex;
+  background: none;
 }
