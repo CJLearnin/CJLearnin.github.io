@@ -122,9 +122,10 @@
               '<tr><td>' +
               split_array[0] +
               '</td><td>' +
-              split_array[1] +
+              '<a href= "' + split_array[1] + '">' + split_array[1] + '</a>' +
               '</td></tr>';
           }
+          
           const element = document.querySelector('.temp');
           element.innerHTML = final_text;
           return data;
