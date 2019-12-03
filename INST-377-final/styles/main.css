@@ -8,8 +8,9 @@ body {
 }
 
 body {
-  background-image: url('https://images.unsplash.com/photo-1567306295427-94503f8300d7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1452&q=80');
+  background-image: url('./market2.jpg');
   background-size: cover;
+  
 }
 
 .navbar {
@@ -64,6 +65,7 @@ a.active {
   left: 46%;
   transform: translate(-50%, -50%);
   text-shadow: #343a40 2px 2px;
+  background-color:;
 }
 
 .header h1 {
