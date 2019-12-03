@@ -9,7 +9,7 @@ body {
 
 .card-image {
   background-image: url('./market2.jpg');
-  min-height: 250px;
+  min-height: 150px;
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
