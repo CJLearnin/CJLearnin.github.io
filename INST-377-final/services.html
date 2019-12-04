@@ -23,10 +23,7 @@
   </head>
   <body>
     <!-- Navigation -->
-    <nav
-      class="navbar navbar-expand-lg navbar-light"
-      style="background-color: #ffffff"
-    >
+    <nav class="navbar navbar-expand-lg navbar-light">
       <a class="navbar-brand" href="#">Prince Georges Farmers Markets</a>
       <button
         class="navbar-toggler"
@@ -76,31 +73,29 @@
     </div>
 
     <!-- TABLE AND MAP -->
-      <div class="row">
-          <div class="column">
-              <table class="table table-hover table-dark ">
-                  <thead>
-                    <tr>
-                      <th scope="col">Name</th>
-                      <th scope="col">Website</th>
-                    </tr>
-                  </thead>
-                  <tbody class="temp"></tbody>
-                </table>
-          </div>
-          <div class="column">
-              <iframe
-              width="800"
-              height="1100"
-              id="gmap_canvas"
-              src="https://www.google.com/maps/d/u/0/embed?mid=1ztngLn5ZqP24hZH5Uy9pPo3YSxVXK6vq"
-              frameborder="0"
-              scrolling="yes"
-            ></iframe>
-          </div>
+    <div class="row">
+      <div class="column">
+        <table class="table table-hover table-dark ">
+          <thead>
+            <tr>
+              <th scope="col">Name</th>
+              <th scope="col">Website</th>
+            </tr>
+          </thead>
+          <tbody class="temp"></tbody>
+        </table>
       </div>
-
-
+      <div class="column">
+        <iframe
+          width="800"
+          height="1100"
+          id="gmap_canvas"
+          src="https://www.google.com/maps/d/u/0/embed?mid=1ztngLn5ZqP24hZH5Uy9pPo3YSxVXK6vq"
+          frameborder="0"
+          scrolling="yes"
+        ></iframe>
+      </div>
+    </div>
 
     <div class="gmap_canvas"></div>
 
@@ -123,10 +118,14 @@
               '<tr><td>' +
               split_array[0] +
               '</td><td>' +
-              '<a href= "' + split_array[1] + '">' + split_array[1] + '</a>' +
+              '<a href= "' +
+              split_array[1] +
+              '">' +
+              split_array[1] +
+              '</a>' +
               '</td></tr>';
           }
-          
+
           const element = document.querySelector('.temp');
           element.innerHTML = final_text;
           return data;

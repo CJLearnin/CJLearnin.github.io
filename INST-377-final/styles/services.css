@@ -22,16 +22,13 @@ body {
   font-weight: bolder;
 }
 .navbar {
-  background-color: black;
+  background-color: rgb(255, 255, 255);
   font-weight: bolder;
 }
-.navbar-brand {
-  font-size: 48x;
-  color: white;
-}
+.navbar-brand,
 .nav-link {
   font-size: 48x;
-  color: white;
+  color: rgb(0, 0, 0);
 }
 table {
   width: 30%;
