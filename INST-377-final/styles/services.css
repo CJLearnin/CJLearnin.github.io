@@ -46,6 +46,10 @@ td {
 
 .gmap_canvas {
   overflow: hidden;
-
   background: none;
+}
+
+.column {
+  float: left;
+  width: 50%;
 }
