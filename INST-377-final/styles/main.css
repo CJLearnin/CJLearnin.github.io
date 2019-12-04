@@ -8,9 +8,8 @@ body {
 }
 
 body {
-  background-image: url('./market2.jpg');
+  background-image: url('../styles/images/market2.jpg');
   background-size: cover;
-  
 }
 
 .navbar {
@@ -60,12 +59,7 @@ a.active {
 }
 
 .header {
-  position: absolute;
-  top: 38%;
-  left: 46%;
-  transform: translate(-50%, -50%);
   text-shadow: #343a40 2px 2px;
-  background-color:;
 }
 
 .header h1 {
@@ -76,7 +70,7 @@ a.active {
 
 .header p {
   color: #fff;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: bolder;
 }
 

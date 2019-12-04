@@ -57,6 +57,12 @@ TweenMax.from('.card p', 4, {
   y: 20,
   ease: Expo.easeInOut
 });
+TweenMax.from('.container img', 4, {
+  delay: 0.4,
+  opacity: 0,
+  y: 20,
+  ease: Expo.easeInOut
+});
 
 TweenMax.from('.header h1', 2, {
   delay: 2.2,
