@@ -12,7 +12,7 @@ Link to the Farmers Market In Prince George's County User Manual :
 https://github.com/CJLearnin/CJLearnin.github.io/blob/master/INST-377-final/docs/user.md
 
 Link to the Farmers Market In Prince George's County Developers Manual :
-https://github.com/CJLearnin/CJLearnin.github.io/blob/master/INST-377-final/docs/Developer_Manual.md
+https://github.com/CJLearnin/CJLearnin.github.io/blob/master/INST-377-final/docs/README.md#-developers-manual-
 
 Link to final report:
 
