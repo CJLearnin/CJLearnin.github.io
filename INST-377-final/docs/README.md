@@ -9,7 +9,7 @@ Link to the Farmers Market In Prince George's County website:
 Compassionate-kepler-215836.netlify.com
 
 Link to the Farmers Market In Prince George's County User Manual :
-https://github.com/CJLearnin/CJLearnin.github.io/blob/master/INST-377-final/README.md#user-manual-docsusermd
+https://github.com/CJLearnin/CJLearnin.github.io/blob/master/INST-377-final/docs/user.md
 
 Link to the Farmers Market In Prince George's County Developers Manual :
 https://github.com/CJLearnin/CJLearnin.github.io/blob/master/INST-377-final/README.md#user-manual-docsusermd
