@@ -6,7 +6,7 @@
 
 <h2>Interface and User Tasks</h2> 
 	When a user enters our system, they are presented with a home page, about tab, services tab, and help tab. Each tab was designed to help the user navigate the site and find the appropriate information. This allows users to support the local businesses in PG county, but it also allows users to view what fresh foods are available nearby. When interacting on our user interface, users can use the map to see the addresses of the different farmer’s markets, visit the websites of the different farmers’ markets, and learn about the importance of fresh foods in PG county. Fundamentally, users should use our website to educate themselves on which farmers market is near to them.
-<h2>Home Page</h2> 
+<h2>Home Tab</h2> 
 	An introduction to the Prince Georges County Farmers' Market website with a statement of the different actions a user can perform on our platform 
 On the home page, users can click on the explore button which will take them to the services tab 
 
@@ -19,7 +19,7 @@ On the About page users cannot perform any clickable actions. This page is for e
  
  The help page is for educational purposes and users cannot perform any clickable actions on it.
 
-<h2>Services Page</h2> 
+<h2>Services Tab</h2> 
 	The Services Tab offers information about the Farmers’ markets. It lists the name of the market, the markets’ website, and has an interactive map for users to see the location of the market within the county. 
 On this page, users can click on the link to the farmers markets’ website and visit their webpage. Additionally, users can use the map supplied on the services page to view location and address of the farmers market. Users can find out which market is nearby for their convenience. 
 
