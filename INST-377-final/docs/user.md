@@ -11,7 +11,7 @@
 On the home page, users can click on the explore button which will take them to the services tab 
 
 <h2>About Tab</h2> 
-	The About page gives an overview of the purpose of the website and background information about the demographics of PG county and why promoting healthy foods in the county is so important. 
+	The About page gives an overview of the purpose of the website and background information about the demographics of PG county and why promoting healthy foods in the county is so important. It lets our audience know our misson and and vision. 
 On the About page users cannot perform any clickable actions. This page is for educational purposes only. 
 
 <h2>Help Tab</h2> 
