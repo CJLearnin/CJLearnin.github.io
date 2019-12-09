@@ -22,11 +22,3 @@ On the About page users cannot perform any clickable actions. This page is for e
 	The Services Tab offers information about the Farmers’ markets. It lists the name of the market, the markets’ website, and has an interactive map for users to see the location of the market within the county. 
 On this page, users can click on the link to the farmers markets’ website and visit their webpage. Additionally, users can use the map supplied on the services page to view location and address of the farmers market. Users can find out which market is nearby for their convenience. 
 
-
-
-<h2>Help Page</h2> 
-	The Help Tab is a page to aid developers that may want to be added to our project. The page tells developers about our technology stack, how to use the website, and about our team members. 
-The help page is for educational purposes and users cannot perform any clickable actions on it. 
-
-
-
