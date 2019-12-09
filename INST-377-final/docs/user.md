@@ -12,7 +12,7 @@ On the home page, users can click on the explore button which will take them to 
 
 <h2>About Tab</h2> 
 	The About page gives an overview of the purpose of the website and background information about the demographics of PG county and why promoting healthy foods in the county is so important. 
-On the About page users can not perform any clickable actions. This page is for educational purposes only. 
+On the About page users cannot perform any clickable actions. This page is for educational purposes only. 
 
 <h2>Help Tab</h2> 
 	The Help Tab is a page to aid developers that may want too added to our project. The page tells developers about our technology stack and our team members. 
