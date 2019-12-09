@@ -17,6 +17,7 @@ On the About page users cannot perform any clickable actions. This page is for e
 <h2>Help Tab</h2> 
 	The Help Tab is a page to aid developers that may want to be added to our project. The page tells developers about our technology stack and our team members.
  
+ The help page is for educational purposes and users cannot perform any clickable actions on it.
 
 <h2>Services Page</h2> 
 	The Services Tab offers information about the Farmers’ markets. It lists the name of the market, the markets’ website, and has an interactive map for users to see the location of the market within the county. 
